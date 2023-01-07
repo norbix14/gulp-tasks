@@ -10,13 +10,20 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
-const sassFolder = './src/scss';
-const imgFolder = './src/public/img';
+const root = './src';
+const dist = './dist';
 
-const destinationCssFiles = './src/css';
-const destinationImgFiles = './dist/img';
+const publicImgFolder = '/public/img';
+const publicCssFolder = '/public/css';
+const publicSassFolder = '/public/scss';
 
-const mainSassFile = './src/scss/app.scss';
+const sassFolder = `${root}${publicSassFolder}`;
+const imgFolder = `${root}${publicImgFolder}`;
+
+const destinationCssFiles = `${dist}${publicCssFolder}`;
+const destinationImgFiles = `${dist}${publicImgFolder}`;
+
+const mainSassFile = `${root}/${publicSassFolder}/app.scss`;
 
 const allImgFiles = `${imgFolder}/**/*`;
 const allSassFiles = `${sassFolder}/**/*.scss`;

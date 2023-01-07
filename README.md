@@ -1,8 +1,8 @@
-# Gulp sandbox
+# Gulp Tasks
 
-## Gulp tasks
+## Optimizations and transformations
 
-* optimize *png or jpg* images (from **./src/images_raw/** to **./src/img/**)
+* optimize **[png, jpg]** images (from **./src/public/img/** to **./dist/public/img/**)
 
 ```bash
 gulp optimizeImages
@@ -20,19 +20,19 @@ gulp buildImagesWebp
 gulp buildImagesAvif
 ```
 
-* manually transform *scss* into *css*
+* manually transform **scss** into **css** (from **./src/public/scss/app.scss** to **./dist/public/css/**)
 
 ```bash
 gulp buildCss
 ```
 
-* watch changes in *scss* files (same as *gulp* command below)
+* watch changes in **scss** files (same as *gulp* command below)
 
 ```bash
 gulp dev
 ```
 
-* transform *scss* into *css* (default task) and watch for changes
+* transform **scss** into **css** (default task) and watch for changes
 
 ```bash
 gulp
