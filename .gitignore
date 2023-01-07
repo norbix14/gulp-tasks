@@ -1,6 +1,20 @@
+# folders
 /node_modules
 /dist
+/build
+
+# Logs
 .DS_Store
 .cache
+*.log
 
+# netlify
 .netlify
+
+# Editor directories and files
+.vscode
+*.sublime-workspace
+*.code-workspace
+
+# packages
+package-lock.json
